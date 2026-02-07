@@ -27,6 +27,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
   { href: "/dashboard", label: "Browse", icon: Search },
@@ -161,6 +162,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               );
             })}
           </nav>
+
+          {/* Theme Toggle */}
+          <ThemeToggle />
 
           {/* User Menu */}
           <DropdownMenu>

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Search, Calendar, MessageSquare, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const features = [
   {
@@ -81,7 +82,8 @@ export default function LandingPage() {
             </div>
             <span className="text-xl font-semibold text-foreground">HuskyTeams</span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Link href="/login">
               <Button variant="ghost" size="sm">
                 Log in
