@@ -140,3 +140,4 @@ npm run dev
 | 7 | (If deployed) Vercel env vars updated and Supabase redirect URLs include production URL |
 
 After this, the app is fully linked to your new Supabase project.
+
