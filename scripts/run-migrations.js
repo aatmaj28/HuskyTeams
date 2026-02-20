@@ -102,7 +102,8 @@ async function runMigrations() {
       '006_fix_team_members_rls_final.sql',
       '007_fix_team_members_rls_simple.sql',
       '009_fix_team_members_select_rls.sql',
-      '010_remove_leader_concept.sql'
+      '010_remove_leader_concept.sql',
+      '011_create_otp_verifications.sql'
     ];
 
     for (const file of migrationFiles) {
